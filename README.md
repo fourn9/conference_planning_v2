@@ -3,7 +3,7 @@
 > カンファレンス企画の伴走フレームワーク + **自律的学習レイヤー**
 
 [v1](https://github.com/fourn9/conference_planning) を出発点に、
-[hermes-agent](https://github.com/fourn9/hermes-agent) の自律学習機構を
+[hermes-agent](https://github.com/NousResearch/hermes-agent) の自律学習機構を
 Claude Code のプリミティブ（CLAUDE.md / スラッシュコマンド / フック / frontmatter）で
 再構成した第二世代。
 
