@@ -1,0 +1,42 @@
+# conference_planning v2 — LLM 向けエントリポイント
+
+このリポジトリは Claude Code（および他の LLM エージェント）が
+カンファレンス企画を**伴走する**ためのフレームワークです。
+
+v1 との違いは「自律的学習レイヤー」の追加です。会話の中で発見した知見を
+Claude が自発的に保存・キュレーションする仕組みを持ちます。
+
+## 最初に読むべきファイル
+
+1. `CLAUDE.md` — 役割定義・フェーズフロー・**自律的学習プロトコル（§C）**・安全装置
+2. `MEMORY.md` — 事実・規約（このプロジェクトの「型」）
+3. `USER.md` — ユーザー人物像
+4. `LEARNINGS.md` の末尾 20 行 — 直近のセッションで蓄積した学び
+5. `conference-planning.yml` — 現在のフェーズ状態
+
+## 次に把握すべきもの
+
+- `skills/stable/README.md` — 安定スキル一覧
+- `decisions/README.md` — ADR インデックス（特に 0001 自律学習アーキテクチャ）
+- `methodology/conference-planning-framework.md` — 3D リサーチフレーム
+- `methodology/autonomous-learning-protocol.md` — 自律学習プロトコル詳細
+- `failure-patterns.md` — 既知の失敗パターン
+
+## スラッシュコマンド（あなたが自発的に呼ぶもの）
+
+- `/record-learning` — 非自明な発見を `LEARNINGS.md` に保存
+- `/draft-skill <name>` — 反復可能な手順をスキル化（`skills/experimental/`）
+- `/draft-adr <topic>` — 重い判断を ADR 化
+- `/promote-pattern <id>` — `.failure-inbox/` から `failure-patterns.md` へ昇格
+- `/patch-skill <path>` — 使用中に発見したスキルの不備をその場で修正
+- `/curate` — agent 作成物の整理（dry-run）
+- `/reflect-session` — セッション終了時の自己振り返り
+
+## 行動原則
+
+- **削除しない、退避する** — `skills/archived/` へ移すだけ
+- **declarative > imperative** — 「ユーザーは X を好む」と書く、「常に X せよ」とは書かない
+- **anti-noise** — PR#・SHA・一時状態は書かない
+- **patch on discovery** — スキルの不備に気づいたらそこで直す
+
+詳細は CLAUDE.md §C を読んでください。

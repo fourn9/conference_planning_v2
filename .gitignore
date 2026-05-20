@@ -1,0 +1,15 @@
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# settings.json はユーザー固有なので example のみ追跡
+.claude/settings.json
+.claude/settings.local.json
+
+# ユーザー個別のメモリ（公開しない）
+USER.private.md
+
+# ローカル実行ログ
+*.log

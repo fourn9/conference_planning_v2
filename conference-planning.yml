@@ -1,0 +1,61 @@
+# conference-planning.yml — フェーズ状態（v1 スキーマ互換）
+
+event:
+  name: ""               # 例: "Architecture Conference 2026"
+  scale: ""              # small | medium | large | xl | xxl
+  date: ""               # YYYY-MM-DD
+  is_first_time: false   # 初開催なら true
+  use_historical_data: true  # 過去データを使うか
+
+phases:
+  phase_1_axis_definition:
+    status: pending      # pending | in_progress | completed
+    started_at: null
+    completed_at: null
+    artifacts: []        # 成果物パス（任意）
+
+  phase_2_matrix_a:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+  phase_3_matrix_b:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+  phase_4_core_themes:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+  phase_4_5_internal_validation:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+  phase_4_6_session_theme_structuring:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+  phase_5_speaker_research:
+    status: pending
+    started_at: null
+    completed_at: null
+    artifacts: []
+
+adaptation:
+  # v1 互換のトグル
+  skip_phase_4_5: false
+  custom_role_segments: []
+
+# v2 追加: curator の最終実行日。/curate が更新する
+curator:
+  last_run: null         # YYYY-MM-DD
+  last_actions: []       # 直近の curate アクションのサマリ（5 件まで）

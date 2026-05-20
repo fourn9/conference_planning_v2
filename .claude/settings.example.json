@@ -1,0 +1,40 @@
+{
+  "$comment": "v2 のフック配線サンプル。`cp .claude/settings.example.json .claude/settings.json` で有効化。settings.json は .gitignore で除外されています。",
+
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '---' && echo '[v2 SessionStart] MEMORY.md / USER.md / LEARNINGS.md tail / conference-planning.yml を読み込んでください。最終 /curate が 14 日以上前なら curate を提案してください。' && echo '---'"
+          }
+        ]
+      }
+    ],
+
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '---' && echo '[v2 Stop] /reflect-session を実行して、このセッションで保存すべき学びがあるか自問してください。' && echo '---'"
+          }
+        ]
+      }
+    ]
+  },
+
+  "permissions": {
+    "$comment": "v2 で頻出する読み取り系は allowlist 推奨",
+    "allow": [
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(git log:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)"
+    ]
+  }
+}
