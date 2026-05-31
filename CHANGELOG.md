@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v2.1.0 — 2026-05-31
+
+### Added — 企画フレームワーク本体を同梱（clone 即使える化）
+- **`skills/stable/` に企画フェーズスキル9本**（phase-1〜4.6・validation/hardgate-evaluation・analysis/×2）を同梱。CLAUDE.md §B のフェーズフローが clone 直後に発火する。
+- **`methodology/conference-planning-framework.md`** を実体化（スタブ → 3D リサーチフレーム本体）。
+- **`failure-patterns.md`** に失敗パターン #1–#20 を同梱。
+- **企画手法 ADR 5本**を `decisions/0002–0006` として追加（上流 v1 の 0001–0005 を v2 採番に +1 シフト。`0001` は自律学習レイヤーを維持）。
+- **`methodology/templates/claude-ai-prompt-matrix-b.md`** — 再利用可能な Matrix B リサーチ用 claude.ai プロンプトテンプレ。
+
+### Changed
+- `docs/getting-started.md` §3：v1 からの手動コピー手順を撤去（同梱済みのため）。
+- `README.md` / `llms.txt`：スキル同梱を反映。
+
+### Note
+- 自律学習レイヤー（`autonomous-learning-protocol.md`・`/`コマンド7種・3層メモリ）は v2.0.0 のまま据え置き。
+
 ## v2.0.0 — 2026-05-20
 
 ### Added — 自律的学習レイヤー（hermes-agent から着想）

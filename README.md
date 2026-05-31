@@ -1,6 +1,6 @@
 # conference_planning v2
 
-> カンファレンス企画の伴走フレームワーク + **自律的学習レイヤー**
+> カンファレンス企画の伴走フレームワーク（企画フェーズスキル同梱）+ **自律的学習レイヤー**
 
 [v1](https://github.com/fourn9/conference_planning) を出発点に、
 [hermes-agent](https://github.com/fourn9/hermes-agent) の自律学習機構を
@@ -27,6 +27,8 @@ git clone <this-repo> my-conference
 cd my-conference
 claude   # Claude Code を起動
 ```
+
+clone するだけで `skills/stable/` に企画フェーズスキル9本が揃っており、`CLAUDE.md §B` のフェーズフローがそのまま動きます（v1 からの手動コピー不要）。
 
 セッション開始直後に Claude が以下を自動で行う（CLAUDE.md の指示による）:
 
@@ -63,7 +65,7 @@ conference_planning_v2/
 │   ├── hooks/                   # SessionStart / Stop フック
 │   └── settings.example.json    # フック配線のサンプル
 ├── skills/
-│   ├── stable/                  # 昇格済みスキル（人間承認済み）
+│   ├── stable/                  # 昇格済みスキル（企画フェーズ9本を同梱・人間承認済み）
 │   ├── experimental/            # agent 起草・未承認
 │   └── archived/                # 退役（削除はしない）
 ├── decisions/                   # ADR

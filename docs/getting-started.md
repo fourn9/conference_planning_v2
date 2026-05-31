@@ -15,19 +15,12 @@ cp .claude/settings.example.json .claude/settings.json
 
 `.claude/settings.json` は `.gitignore` で除外されているのでユーザー固有のまま残る。
 
-## 3. v1 からスキルを移植（実イベントで使う場合）
+## 3. フレームワークのスキルは同梱済み
 
-```bash
-# v1 リポジトリのクローンが ~/conference_planning にある前提
-cp -r ~/conference_planning/skills/phase-* ./skills/stable/
-cp -r ~/conference_planning/skills/analysis ./skills/stable/
-cp -r ~/conference_planning/skills/validation ./skills/stable/
-cp ~/conference_planning/methodology/conference-planning-framework.md ./methodology/
-cp ~/conference_planning/failure-patterns.md ./failure-patterns.md
-cp ~/conference_planning/decisions/*.md ./decisions/
-```
-
-各スキルの skill.md 冒頭に frontmatter を追加する必要がある（`docs/migration-from-v1.md`）。
+企画フェーズのスキル（`skills/stable/phase-*`・`skills/stable/validation/hardgate-evaluation`・
+`skills/stable/analysis/*`）と方法論（`methodology/`）・ADR（`decisions/`）・失敗パターン
+（`failure-patterns.md`）は**このリポジトリに同梱済み**です。v1 から手動コピーする必要はありません。
+clone した直後から `CLAUDE.md §B` のフェーズフローがそのまま動きます。
 
 ## 4. ユーザープロフィールを書く
 
