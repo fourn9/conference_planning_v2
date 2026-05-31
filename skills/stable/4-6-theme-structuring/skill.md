@@ -1,8 +1,8 @@
 ---
-name: phase-4-6-session-theme-structuring
+name: 4-6-theme-structuring
 description: コアテーマを大/中/小テーマの階層に構造化する
 phase: phase-4-6
-prerequisites: [phase-4-core-themes, phase-4-5-internal-validation]
+prerequisites: [4-core-themes, 4-5-internal-validation]
 estimated_time: 2-3 days
 created_by: human
 created_at: 2026-05-19
@@ -38,8 +38,8 @@ patches_needed: 0
 - 内部検証の洞察（Phase 4.5）
 
 過去データなしなら：
-- `skills/analysis/matrix-b-genre-aggregation/` を使用
-- オプションで `skills/analysis/adjacent-conference-analysis/`
+- `skills/analysis/genre-aggregation/` を使用
+- オプションで `skills/analysis/adjacent-conferences/`
 
 その上で質問：**「カンファレンスは一文で何について？」** これがキャッチコピー候補。
 
@@ -117,8 +117,8 @@ patches_needed: 0
 クロスリファレンス：
 
 - 過去セッション分布（`use_historical_data: true` なら）
-- 隣接カンファレンス分布（スキル：`skills/analysis/adjacent-conference-analysis/`）
-- Matrix B ジャンル分布（スキル：`skills/analysis/matrix-b-genre-aggregation/`）
+- 隣接カンファレンス分布（スキル：`skills/analysis/adjacent-conferences/`）
+- Matrix B ジャンル分布（スキル：`skills/analysis/genre-aggregation/`）
 - ヒートマップトップテーマ（基調候補テーマがどこかに登場するか？）
 - ターゲット聴衆の成長軸（増やしたい職種 — 関心がカバーされているか？）
 

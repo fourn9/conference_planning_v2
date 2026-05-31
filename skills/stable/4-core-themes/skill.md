@@ -1,8 +1,8 @@
 ---
-name: phase-4-core-themes
+name: 4-core-themes
 description: 複数規模×職種で重複する「知りたいこと」からコアテーマを抽出する
 phase: phase-4
-prerequisites: [phase-3-matrix-b]
+prerequisites: [3-matrix-b]
 estimated_time: 2-4 hours
 created_by: human
 created_at: 2026-05-19
@@ -108,7 +108,7 @@ phases:
 
 - ADR：`decisions/0002-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 4）
-- 次スキル：`skills/phase-4-5-internal-validation/`
+- 次スキル：`skills/4-5-internal-validation/`
 
 ## 注意すべき失敗パターン
 

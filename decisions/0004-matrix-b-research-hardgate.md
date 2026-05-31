@@ -94,6 +94,6 @@ Matrix B 初期実装では、生リサーチからの候補採用が約 15-20% 
 ## References
 
 - ADR-0002、ADR-0003 を拡張
-- スキル：`skills/validation/hardgate-evaluation/`（G1-G7 を運用化）
-- スキル：`skills/phase-3-matrix-b/`（セル構築中にハードゲートを呼ぶ）
+- スキル：`skills/stable/research/hardgate-evaluation/`（G1-G7 を運用化）
+- スキル：`skills/stable/3-matrix-b/`（セル構築中にハードゲートを呼ぶ）
 - 失敗パターン：`failure-patterns.md` の #11-15

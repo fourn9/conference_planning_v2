@@ -1,8 +1,8 @@
 ---
-name: phase-2-matrix-a
+name: 2-matrix-a
 description: 規模×目的の Matrix A を IR・中計・経営層発言から構築する
 phase: phase-2
-prerequisites: [phase-1-axis-definition]
+prerequisites: [1-axis-definition]
 estimated_time: half a day
 created_by: human
 created_at: 2026-05-19
@@ -144,8 +144,8 @@ phases:
 
 - ADR：`decisions/0002-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 2）
-- 次スキル：`skills/phase-3-matrix-b/`
-- 検証：`skills/validation/hardgate-evaluation/`（IR ソース向けの軽量版）
+- 次スキル：`skills/3-matrix-b/`
+- 検証：`skills/stable/research/hardgate-evaluation/`（IR ソース向けの軽量版）
 
 ## 注意すべき失敗パターン
 

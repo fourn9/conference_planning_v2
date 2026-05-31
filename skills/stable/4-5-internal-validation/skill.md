@@ -1,8 +1,8 @@
 ---
-name: phase-4-5-internal-validation
+name: 4-5-internal-validation
 description: Matrix B 仮説を社内エンジニアへのヒアリングで検証する
 phase: phase-4-5
-prerequisites: [phase-3-matrix-b, phase-4-core-themes]
+prerequisites: [3-matrix-b, 4-core-themes]
 estimated_time: 2-3 days (calendar)
 created_by: human
 created_at: 2026-05-19
@@ -146,7 +146,7 @@ phases:
 ## 関連
 
 - 方法論：`methodology/conference-planning-framework.md`（Phase 4.5）
-- 次スキル：`skills/phase-4-6-session-theme-structuring/`
+- 次スキル：`skills/4-6-theme-structuring/`
 
 ## 注意すべき失敗パターン
 

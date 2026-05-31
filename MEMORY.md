@@ -40,7 +40,7 @@ EM / TL / Senior / Mid / Junior / SRE / Data
 
 ## ハードゲート（G1〜G7、登壇者選定時）
 
-詳細は `skills/stable/validation/hardgate-evaluation/`。
+詳細は `skills/stable/research/hardgate-evaluation/`。
 
 ## anti-pattern よく出るもの（詳細は `failure-patterns.md`）
 

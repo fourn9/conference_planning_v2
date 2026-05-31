@@ -70,7 +70,7 @@ patches_needed: 0
 
 ```yaml
 ---
-name: phase-1-axis-definition
+name: 1-axis-definition
 description: ターゲット聴衆の規模・目的・職種軸を定義する
 phase: phase-1
 prerequisites: []

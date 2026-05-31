@@ -71,4 +71,4 @@
 ## References
 
 - ADR-0003 に拡張（3D フレームワークは目的軸を一級クロスカットとして導入）
-- スキル：`skills/validation/hardgate-evaluation/`（ソース評価を運用化）
+- スキル：`skills/stable/research/hardgate-evaluation/`（ソース評価を運用化）

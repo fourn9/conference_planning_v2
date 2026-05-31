@@ -20,7 +20,7 @@ argument-hint: <skill-path>
 
 ## 引数
 
-- `<skill-path>` — `skills/stable/phase-1-axis-definition/skill.md` のような相対パス
+- `<skill-path>` — `skills/stable/1-axis-definition/skill.md` のような相対パス
 
 ## 実行手順
 

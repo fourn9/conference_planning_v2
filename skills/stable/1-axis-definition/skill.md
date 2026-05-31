@@ -1,5 +1,5 @@
 ---
-name: phase-1-axis-definition
+name: 1-axis-definition
 description: ターゲット聴衆の規模・目的・職種軸を定義する
 phase: phase-1
 prerequisites: []
@@ -140,7 +140,7 @@ phases:
 - ADR：`decisions/0002-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 1 セクション）
 - 用語集：`docs/glossary.md`
-- 次スキル：`skills/phase-2-matrix-a/`
+- 次スキル：`skills/2-matrix-a/`
 
 ## 注意すべき失敗パターン
 

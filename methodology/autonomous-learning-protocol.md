@@ -73,18 +73,18 @@ pinned: true
 ## 5. Patch on discovery — 具体例
 
 例 1（OK）:
-> Phase 3 で `skills/stable/phase-3-matrix-b/skill.md` を実行中、
+> Phase 3 で `skills/stable/3-matrix-b/skill.md` を実行中、
 > ステップ 4 が古い API を参照していることに気づく
-> → `/patch-skill skills/stable/phase-3-matrix-b/skill.md` で修正
+> → `/patch-skill skills/stable/3-matrix-b/skill.md` で修正
 
 例 2（NG、frontmatter を確認）:
 > 同じ状況だが、対象スキルが `pinned: true`
 > → 修正しない。代わりに `LEARNINGS.md` に
->   「`skills/stable/phase-3-matrix-b/skill.md` のステップ 4 が古い API を参照している」と記録
+>   「`skills/stable/3-matrix-b/skill.md` のステップ 4 が古い API を参照している」と記録
 
 例 3（大幅改修）:
 > 古いどころか手順全体が時代遅れ
-> → `/patch-skill` ではなく `/draft-skill phase-3-matrix-b-v2` で代替スキルを起草
+> → `/patch-skill` ではなく `/draft-skill 3-matrix-b-v2` で代替スキルを起草
 > → 元スキルの frontmatter を `status: deprecated` に変更（人間承認後）
 
 ## 6. `/curate` の閾値判断
