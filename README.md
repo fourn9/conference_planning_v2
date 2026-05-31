@@ -104,6 +104,52 @@ conference_planning_v2/
 
 > 自律学習のスラッシュコマンド（`/record-learning`・`/draft-skill`・`/draft-adr`・`/promote-pattern`・`/patch-skill`・`/curate`・`/reflect-session`）は `.claude/commands/` を参照。
 
+## 使い方
+
+### 起動
+
+```bash
+git clone <this-repo> my-conference && cd my-conference && claude
+```
+
+`CLAUDE.md` が自動ロードされ、Claude が現在フェーズを確認して該当スキルを提案・実行する。
+手動で「Phase 2 をやって」や「`skills/stable/2-matrix-a` に沿って Matrix A を作って」と指示してもよい。
+
+### 企画フェーズの流れ（入力が前段の出力に依存）
+
+| 順 | スキル | 前提（入力） | 出力 |
+|---|---|---|---|
+| 1 | `1-axis-definition` | （なし） | 規模・目的・職種の軸 |
+| 2 | `2-matrix-a` | 軸 | Matrix A（規模×目的） |
+| 3 | `3-matrix-b` | 軸・Matrix A | Matrix B（職種×目的）※research ループで参考URLを収集 |
+| 4 | `4-core-themes` | Matrix B | コアテーマ |
+| 4.5 | `4-5-internal-validation` | Matrix B・コアテーマ | 検証済み仮説（社内ヒアリング） |
+| 4.6 | `4-6-theme-structuring` | コアテーマ・検証結果 | セッションテーマ構造（大／中／小） |
+
+各フェーズは「前提確認 → スキル実行 → **批判的見直し2回** → `conference-planning.yml` 更新 → 判断を `decisions/` か `LEARNINGS.md` に記録」の順で進む（`CLAUDE.md §B`）。
+
+### リサーチ・ループ（`research/`）の使い方
+
+外部 LLM（claude.ai 等）に深掘りを任せる場面（主に Phase 2・3・5）で1周回す：
+
+1. **`design-prompt`** でプロンプトを設計（カバレッジ必達／確定数は捏造禁止／固有名を例示・ソースに埋めない）
+2. claude.ai 等で**実行**
+3. **`review-output`** で成果を品質レビュー（ソース単位は `hardgate-evaluation` の G1–G7）
+4. **`iterate-from-failures`** で問題を `failure-patterns.md` にマップ → プロンプト改善 → 再実行
+
+必達カバレッジを満たし、新規問題が出なくなったら停止する（「確定 N 件」で止めない）。
+
+### 補助分析（`analysis/`）
+
+- **`adjacent-conferences`**：隣接カンファレンスの登壇傾向を分析（過去データなしのときの代替材料）
+- **`genre-aggregation`**：Matrix B をジャンル集約し職種横断の傾向を見る
+
+### 自律学習（任意・横断）
+
+非自明な発見は `/record-learning`、反復手順は `/draft-skill`、重い判断は `/draft-adr`、失敗は `.failure-inbox/` に記録、定期整理は `/curate`。詳細は `CLAUDE.md §C`。
+
+> 各スキルの詳細な手順・チェックリスト・アンチパターンは、それぞれの `skill.md` 本文を参照。
+
 ## 設計上の Non-Goals
 
 - **完全な無人運用**: Claude Code が永続プロセスを持たない以上、Hermes のような
