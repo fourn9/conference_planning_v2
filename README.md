@@ -74,6 +74,36 @@ conference_planning_v2/
 └── docs/                        # ユーザー向けガイド
 ```
 
+## スキル一覧
+
+`skills/stable/` に同梱。clone 直後から `CLAUDE.md` のフェーズフローで呼び出される。
+
+### 企画フェーズ（順に実行）
+| スキル | 説明 |
+|---|---|
+| `1-axis-definition` | ターゲット聴衆の規模・目的・職種の軸を定義する |
+| `2-matrix-a` | 規模×目的の Matrix A を IR・中期計画・経営層発言から構築する |
+| `3-matrix-b` | 職種×目的の Matrix B を採否ハードゲートで構築する |
+| `4-core-themes` | 複数規模×職種で重複する「知りたいこと」からコアテーマを抽出する |
+| `4-5-internal-validation` | Matrix B 仮説を社内エンジニアへのヒアリングで検証する |
+| `4-6-theme-structuring` | コアテーマを大／中／小テーマの階層に構造化する |
+
+### research/ — リサーチ・ループ（外部 LLM への深掘りリサーチを設計→レビュー→改善）
+| スキル | 説明 |
+|---|---|
+| `design-prompt` | ディープリサーチ用プロンプトを設計（カバレッジ最大化×ハルシネーション最小化・closed list 禁止） |
+| `review-output` | 返ってきた成果ドキュメントを品質レビュー（実在性・カバレッジ・引用・越境・偏り） |
+| `iterate-from-failures` | 見つけた問題を失敗パターン #1–20 にマップし、次プロンプトを改善 |
+| `hardgate-evaluation` | リサーチ候補を G1–G7 ハードゲートで採否判定（review 内のソース単位ゲート） |
+
+### analysis/ — 補助分析
+| スキル | 説明 |
+|---|---|
+| `adjacent-conferences` | 隣接カンファレンスの登壇傾向を分析（過去データなしの代替にも） |
+| `genre-aggregation` | Matrix B をジャンル集約し職種横断の傾向を抽出する |
+
+> 自律学習のスラッシュコマンド（`/record-learning`・`/draft-skill`・`/draft-adr`・`/promote-pattern`・`/patch-skill`・`/curate`・`/reflect-session`）は `.claude/commands/` を参照。
+
 ## 設計上の Non-Goals
 
 - **完全な無人運用**: Claude Code が永続プロセスを持たない以上、Hermes のような
