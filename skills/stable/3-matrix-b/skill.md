@@ -1,8 +1,8 @@
 ---
-name: phase-3-matrix-b
+name: 3-matrix-b
 description: 職種×目的の Matrix B を採否ハードゲートで構築する
 phase: phase-3
-prerequisites: [phase-1-axis-definition, phase-2-matrix-a]
+prerequisites: [1-axis-definition, 2-matrix-a]
 estimated_time: 3-5 hours
 created_by: human
 created_at: 2026-05-19
@@ -94,7 +94,7 @@ G7：目的カテゴリと文脈的一致（キーワードではない）
 各職種（7 職種）について：
 
 1. 生アウトプットをユーザーの作業ディレクトリに保存
-2. ハードゲートフィルタを適用（`skills/validation/hardgate-evaluation/`）
+2. ハードゲートフィルタを適用（`skills/stable/research/hardgate-evaluation/`）
 3. `templates/matrix-b.md` セル構造（セルあたり 4 セクション）にフォーマット
 4. Matrix A に対して該当規模をクロスチェック
 
@@ -140,8 +140,8 @@ phases:
 - ADR：`decisions/0003-matrix-b-research-hardgate-and-process.md`
 - ADR：`decisions/0002-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 3）
-- 検証：`skills/validation/hardgate-evaluation/`
-- 次スキル：`skills/phase-4-core-themes/`
+- 検証：`skills/stable/research/hardgate-evaluation/`
+- 次スキル：`skills/4-core-themes/`
 
 ## 注意すべき失敗パターン
 

@@ -56,7 +56,7 @@
    ↓
 [ユーザーが「Phase 3 を進めたい」と発言]
    ↓
-   Claude が skills/stable/phase-3-matrix-b/ を呼ぶ
+   Claude が skills/stable/3-matrix-b/ を呼ぶ
    ↓
 [ステップ 4 で古さに気づく]
    ↓

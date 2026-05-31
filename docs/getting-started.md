@@ -17,8 +17,7 @@ cp .claude/settings.example.json .claude/settings.json
 
 ## 3. フレームワークのスキルは同梱済み
 
-企画フェーズのスキル（`skills/stable/phase-*`・`skills/stable/validation/hardgate-evaluation`・
-`skills/stable/analysis/*`）と方法論（`methodology/`）・ADR（`decisions/`）・失敗パターン
+企画フェーズのスキル（`skills/stable/` の番号付き6本・`skills/stable/research/`〔リサーチ・ループ：design-prompt→review-output→iterate-from-failures＋hardgate-evaluation〕・`skills/stable/analysis/`×2）と方法論（`methodology/`）・ADR（`decisions/`）・失敗パターン
 （`failure-patterns.md`）は**このリポジトリに同梱済み**です。v1 から手動コピーする必要はありません。
 clone した直後から `CLAUDE.md §B` のフェーズフローがそのまま動きます。
 

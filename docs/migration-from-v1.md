@@ -151,7 +151,7 @@ claude
 セッション開始後、Claude に以下を確認させる:
 
 - `MEMORY.md` / `USER.md` / `LEARNINGS.md` を読めるか
-- `skills/stable/phase-1-axis-definition/skill.md` を呼べるか
+- `skills/stable/1-axis-definition/skill.md` を呼べるか
 - `/curate` を dry-run で実行できるか
 
 すべて OK なら移植完了。

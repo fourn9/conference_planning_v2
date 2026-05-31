@@ -24,20 +24,22 @@
 ## §B. フェーズフロー
 
 ```
-Phase 1: 軸定義                       → skills/stable/phase-1-axis-definition/
-Phase 2: Matrix A 作成                → skills/stable/phase-2-matrix-a/
-Phase 3: Matrix B 作成                → skills/stable/phase-3-matrix-b/
-Phase 4: コアテーマ抽出               → skills/stable/phase-4-core-themes/
-Phase 4.5: 内部検証                   → skills/stable/phase-4-5-internal-validation/
-Phase 4.6: セッションテーマ構造化     → skills/stable/phase-4-6-session-theme-structuring/
+Phase 1: 軸定義                       → skills/stable/1-axis-definition/
+Phase 2: Matrix A 作成                → skills/stable/2-matrix-a/
+Phase 3: Matrix B 作成                → skills/stable/3-matrix-b/
+Phase 4: コアテーマ抽出               → skills/stable/4-core-themes/
+Phase 4.5: 内部検証                   → skills/stable/4-5-internal-validation/
+Phase 4.6: セッションテーマ構造化     → skills/stable/4-6-theme-structuring/
 Phase 5: 登壇者リサーチ               → ユーザー固有スキルで拡張
 ```
+
+**（横断）リサーチ・ループ**：深掘りリサーチを外部 LLM（claude.ai 等）に任せる場面（特に Phase 2/3/5）では `skills/stable/research/` を1ループで回す — `design-prompt`（プロンプト設計）→ 実行 → `review-output`（成果レビュー・`hardgate-evaluation` 内包）→ `iterate-from-failures`（改善）。
 
 各フェーズで:
 
 1. `conference-planning.yml` で前提条件を確認
 2. 該当スキルを呼び出す
-3. ハードゲート検証を適用（`skills/stable/validation/hardgate-evaluation/`）
+3. ハードゲート検証を適用（`skills/stable/research/hardgate-evaluation/`）
 4. **批判的見直しを最低 2 回** 行う（「本当にそうか？」）
 5. `conference-planning.yml` のステータスを更新
 6. 重要な判断は `decisions/` に ADR 化、軽い気付きは `LEARNINGS.md` に追記
