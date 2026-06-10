@@ -149,7 +149,7 @@ phases:
     notes: "キャッチコピー：[コピー]。[X] 大テーマ、[Y] 中テーマ、[Z] 小テーマ。"
 ```
 
-`decisions-log.md` に最終キャッチコピーをログ。
+`LEARNINGS.md` に最終キャッチコピーをログ。
 
 ## 使うテンプレート
 
@@ -166,8 +166,8 @@ phases:
 
 ## 関連
 
-- ADR：`decisions/0004-session-theme-structuring-methodology.md`
-- ADR：`decisions/0002-3d-research-framework.md`
+- ADR：`decisions/0005-session-theme-structuring.md`
+- ADR：`decisions/0003-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 4.6）
 - 次フェーズ：登壇者リサーチ（Phase 5、軽くテンプレ化）
 

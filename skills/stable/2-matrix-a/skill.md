@@ -121,7 +121,7 @@ phases:
     notes: "25 社、X セルが強い証拠、Y セルを低信頼度とフラグ"
 ```
 
-`decisions-log.md` にログ。
+`LEARNINGS.md` にログ。
 
 ### Step 2.6：低信頼度セルを後でフラグ
 
@@ -142,9 +142,9 @@ phases:
 
 ## 関連
 
-- ADR：`decisions/0002-3d-research-framework.md`
+- ADR：`decisions/0003-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 2）
-- 次スキル：`skills/3-matrix-b/`
+- 次スキル：`skills/stable/3-matrix-b/`
 - 検証：`skills/stable/research/hardgate-evaluation/`（IR ソース向けの軽量版）
 
 ## 注意すべき失敗パターン

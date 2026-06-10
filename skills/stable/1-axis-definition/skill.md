@@ -113,7 +113,7 @@ phases:
     notes: "デフォルト軸 + [適応内容]"
 ```
 
-`decisions-log.md`（なければ作成）に追記：
+`LEARNINGS.md` に追記：
 
 ```markdown
 ## YYYY-MM-DD
@@ -137,13 +137,12 @@ phases:
 
 ## 関連
 
-- ADR：`decisions/0002-3d-research-framework.md`
+- ADR：`decisions/0003-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 1 セクション）
-- 用語集：`docs/glossary.md`
-- 次スキル：`skills/2-matrix-a/`
+- 次スキル：`skills/stable/2-matrix-a/`
 
 ## 注意すべき失敗パターン
 
 - 領域に合わないデフォルト軸を強制（ユーザーが沈黙で同意し、Phase 2 で詰まる）
 - P5 vs P6 の説明をスキップ（後の Matrix A 誤分類の原因）
-- `decisions-log.md` に適応を文書化しない（「なぜ」が失われる）
+- `LEARNINGS.md` に適応を文書化しない（「なぜ」が失われる）

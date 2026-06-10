@@ -1,7 +1,7 @@
 ---
 name: hardgate-evaluation
 description: リサーチ候補を G1-G7 ハードゲートで採否判定する
-phase: validation
+phase: cross-phase
 prerequisites: []
 estimated_time: 5-10 minutes per candidate
 created_by: human
@@ -132,8 +132,15 @@ Matrix B 向け：
 同じ著者が一方の行で G5 を通過し、別の行では失敗することがある。
 **G5 は行ごとにチェック**、著者ごとではない。
 
+## 検証
+
+- [ ] 候補ごとに G1-G7 すべてを ✅/❌ と理由付きでマークした（スキップしたゲートがない）
+- [ ] 却下候補が理由付きで `rejected-candidates.md` にログされている
+- [ ] ゲートを緩めた場合、緩和理由が明示的に文書化されている（G1 の緩和は不可）
+- [ ] 「候補なし」のセルを水増しせず、そのまま報告した
+
 ## 関連
 
-- ADR：`decisions/0003-matrix-b-research-hardgate-and-process.md`
+- ADR：`decisions/0004-matrix-b-research-hardgate.md`
 - 方法論：`methodology/conference-planning-framework.md`（§4.6）
 - 失敗パターン：`failure-patterns.md`（#11-15）

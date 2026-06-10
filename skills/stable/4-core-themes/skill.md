@@ -91,7 +91,7 @@ phases:
     notes: "16 クロスカットテーマ。3 つの最広リーチ基調候補。4 つの audience-shape クラスタ。"
 ```
 
-`decisions-log.md` に基調候補数とクラスタ構造をログ。
+`LEARNINGS.md` に基調候補数とクラスタ構造をログ。
 
 ## 使うテンプレート
 
@@ -106,9 +106,9 @@ phases:
 
 ## 関連
 
-- ADR：`decisions/0002-3d-research-framework.md`
+- ADR：`decisions/0003-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 4）
-- 次スキル：`skills/4-5-internal-validation/`
+- 次スキル：`skills/stable/4-5-internal-validation/`
 
 ## 注意すべき失敗パターン
 

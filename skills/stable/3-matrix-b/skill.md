@@ -116,7 +116,7 @@ phases:
     notes: "7 職種 × 6 目的 = 42 セル。採用率 Z%。AI 過剰表現 [Y/N]。"
 ```
 
-`decisions-log.md` にログ。
+`LEARNINGS.md` にログ。
 
 ### Step 3.5：内部検証用にフラグ
 
@@ -137,11 +137,11 @@ phases:
 
 ## 関連
 
-- ADR：`decisions/0003-matrix-b-research-hardgate-and-process.md`
-- ADR：`decisions/0002-3d-research-framework.md`
+- ADR：`decisions/0004-matrix-b-research-hardgate.md`
+- ADR：`decisions/0003-3d-research-framework.md`
 - 方法論：`methodology/conference-planning-framework.md`（Phase 3）
 - 検証：`skills/stable/research/hardgate-evaluation/`
-- 次スキル：`skills/4-core-themes/`
+- 次スキル：`skills/stable/4-core-themes/`
 
 ## 注意すべき失敗パターン
 

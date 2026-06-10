@@ -128,7 +128,7 @@ phases:
     notes: "[X] 名のエンジニアで検証。[Y] の不足角度を追加。[Z] 仮説を修正。"
 ```
 
-`decisions-log.md` にログ。
+`LEARNINGS.md` にログ。
 
 ## 使うテンプレート
 

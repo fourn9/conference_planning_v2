@@ -16,7 +16,7 @@
 - `skills/stable/` から該当スキルを呼び出す
 - `templates/` を使って成果物をフォーマット
 - フェーズ完了に応じて `conference-planning.yml` を更新
-- `decisions-log.md` または `decisions/` に判断を記録
+- 重要な判断は `decisions/`（ADR）に、軽い気付きは `LEARNINGS.md` に記録
 - ユーザーの行動が `failure-patterns.md` に該当しそうなら警告
 
 ---

@@ -3,7 +3,7 @@
 > v1（[fourn9/conference_planning](https://github.com/fourn9/conference_planning)）
 > の資産を v2 に移植する手順。
 
-> **v2.1.0 以降の注記**：v1 のストック資産（`skills/stable/` のフェーズスキル9本・`methodology/`・
+> **v2.1.0 以降の注記**：v1 のストック資産（`skills/stable/` のフェーズスキル6本＋リサーチ/分析スキル6本・`methodology/`・
 > `decisions/0002-0006`・`failure-patterns.md`・Matrix B テンプレ）は **v2 に同梱済み**です。
 > 本ガイドは「v1 に独自のカスタムスキルがあり追加で持ち込みたい」場合、または v2 がどう組み上がって
 > いるかを理解したい場合にのみ参照してください。採番方針（§5・トラブルシュート）は実際の同梱結果

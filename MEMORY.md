@@ -34,7 +34,7 @@ pinned: true
 
 P1 立上 / P2 拡張 / P3 統合 / P4 刷新 / P5 AI 組込 / P6 AI ネイティブ
 
-## 職種軸（7 区分、v1 から継承、ADR-0003 にて CTO 除外）
+## 職種軸（7 区分、v1 から継承、ADR-0004 にて CTO 除外（v1 採番では ADR-0003））
 
 EM / TL / Senior / Mid / Junior / SRE / Data
 
