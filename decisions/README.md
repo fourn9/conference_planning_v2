@@ -13,6 +13,7 @@
 | 0004 | [Matrix B リサーチの採否ハードゲートとプロセス規律](0004-matrix-b-research-hardgate.md) | Accepted | 2026-05 |
 | 0005 | [セッションテーマ構造化方法論](0005-session-theme-structuring.md) | Accepted | 2026-05 |
 | 0006 | [リサーチナレッジパイプライン（claude.ai ↔ Claude Code）](0006-research-knowledge-pipeline.md) | Accepted | 2026-05 |
+| 0007 | [ディープリサーチを Claude Code 内ワークフローで完結させる](0007-deep-research-in-claude-code.md) | Accepted | 2026-06 |
 
 > **採番メモ**：`0001` は v2 の自律学習レイヤー（v2 を定義する中核）。`0002`–`0006` は企画手法 ADR で、上流テンプレ v1（[conference_planning](https://github.com/fourn9/conference_planning)）の `0001`–`0005` に対応する（v2 で +1 シフト）。
 

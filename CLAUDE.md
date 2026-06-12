@@ -33,7 +33,7 @@ Phase 4.6: セッションテーマ構造化     → skills/stable/4-6-theme-str
 Phase 5: 登壇者リサーチ               → ユーザー固有スキルで拡張
 ```
 
-**（横断）リサーチ・ループ**：深掘りリサーチを外部 LLM（claude.ai 等）に任せる場面（特に Phase 2/3/5）では `skills/stable/research/` を1ループで回す — `design-prompt`（プロンプト設計）→ 実行 → `review-output`（成果レビュー・`hardgate-evaluation` 内包）→ `iterate-from-failures`（改善）。
+**（横断）リサーチ・ループ**：深掘りリサーチ（特に Phase 2/3/5）は `skills/stable/research/` を1ループで回す — `design-prompt`（プロンプト設計）→ 実行 → `review-output`（成果レビュー・`hardgate-evaluation` 内包）→ `iterate-from-failures`（改善）。実行は **Claude Code 内のマルチエージェントワークフロー（`.claude/workflows/speaker-deep-research.js`・ADR-0007）を第一選択**とし、外部 LLM（claude.ai 等）への貼り付け実行はフォールバックに位置付ける（どちらの実行でもレビュー・改善ループは共通）。
 
 各フェーズで:
 
