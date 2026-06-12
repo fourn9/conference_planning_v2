@@ -94,7 +94,7 @@ P6：AI ネイティブ再構築
 - 不明・該当ソース未確認は明示する
 ```
 
-ユーザーが claude.ai Deep Research モードに貼り付ける。
+実行は Claude Code 内のディープリサーチワークフローが第一選択（ADR-0007。探索→検証の構成は `.claude/workflows/speaker-deep-research.js` を参考に Matrix A 用に組む）。外部 LLM（claude.ai Deep Research）への貼り付けはフォールバック。
 
 ### Step 2.3：アウトプットを受領・統合
 

@@ -122,8 +122,8 @@ phases:
 
 ### Step 1.7：次ステップを提案
 
-伝える：「Phase 1 完了。次は Phase 2（Matrix A）です。約半日、主に claude.ai Deep Research に
-委譲します。進めますか？」
+伝える：「Phase 1 完了。次は Phase 2（Matrix A）です。約半日、主にディープリサーチ
+（Claude Code 内ワークフロー実行・ADR-0007。外部 LLM はフォールバック）に委譲します。進めますか？」
 
 ## 使うテンプレート
 
