@@ -17,9 +17,13 @@ patches_needed: 0
 
 ## 目的
 
-claude.ai 等の LLM リサーチに投げる**プロンプトそのものを設計する**スキル。
+ディープリサーチに投げる**プロンプトそのものを設計する**スキル。
 「広く探す」と「捏造しない」を同時に成立させる。Matrix A/B の参考URL収集（Phase 2・3）や
-登壇者・事例・競合リサーチなど、外部 LLM に深掘りを任せる場面で使う。
+登壇者・事例・競合リサーチなど、深掘りリサーチを委譲する場面で使う。
+実行系は **Claude Code 内ワークフローが第一選択**（ADR-0007。登壇候補は
+`.claude/workflows/speaker-deep-research.js`、それ以外も探索→検証の同型ワークフローを構成する）。
+外部 LLM（claude.ai 等）への貼り付けはフォールバック。**プロンプト＝仕様書**であり、
+どちらの実行系でも本スキルの設計原則をそのまま使う。
 
 `research/review-output`（成果レビュー）→ `research/iterate-from-failures`（改善）と1本のループを成す。
 具体テンプレは `methodology/templates/claude-ai-prompt-matrix-b.md` を出発点にできる。
