@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v2.2.0 — 2026-06-12
+
+### Added — ディープリサーチの Claude Code 完結化（ADR-0007）
+- **`.claude/workflows/speaker-deep-research.js`** — 探索 fan-out → 候補別ゲート検証のマルチエージェントワークフロー。探索角度・ゲート判別ルール・既出除外名簿・検証上限を `args` で注入する汎用実行系。
+- **`decisions/0007-deep-research-in-claude-code.md`** — 外部 LLM 貼り付け実行から Claude Code 内ワークフロー実行への移行判断（実証：3テーマ・42エージェント・確定27名）。
+
+### Changed
+- `CLAUDE.md` リサーチ・ループ：Claude Code 内ワークフロー実行を第一選択に変更（外部 LLM はフォールバック）。`design-prompt` → 実行 → `review-output` → `iterate-from-failures` のループは実行系によらず共通。
+- `decisions/README.md`：ADR-0007 を索引に追加。
+
 ## v2.1.0 — 2026-05-31
 
 ### Added — 企画フレームワーク本体を同梱（clone 即使える化）
